@@ -1,0 +1,48 @@
+.modal {
+  width: 40rem;
+  max-width: 90%;
+  background-color: black;
+  box-shadow: 0px 2px 10px white;
+  position: fixed;
+  top: 15vh;
+  left: 5%;
+}
+.modal_header {
+  padding: 1rem;
+  background: black; /*query p1: change later*/
+  color: white;
+}
+
+.modal_header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  background-color: black; /*change later same as p1*/
+}
+.modal_content {
+  padding: 1rem;
+}
+.modal_action {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 30rem;
+    left: calc((100% - 30rem) / 2);
+  }
+}
+
+.btn {
+  color: white;
+  font: inherit;
+  width: 7rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.btn:hover,
+.btn:active {
+  color: rgb(128, 255, 213);
+}
